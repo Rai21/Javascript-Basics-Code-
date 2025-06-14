@@ -18,3 +18,10 @@ console.log(newString);
 
 const anotherString = gameName.slice(-8, 4) // slicing
 console.log(anotherString);
+
+const newStringOne = "  Rai  "
+console.log(newStringOne);;
+console.log(newStringOne.trim());
+
+
+
