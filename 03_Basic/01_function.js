@@ -42,3 +42,22 @@ function calculateCarPrice(...num1){ // ... is rest operator also.
 //console.log(calculateCarPrice(200,400,500,2000));
 
 
+// Object --> fnction convertion
+const user = {  
+    username:"rai",
+    price:999
+}
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+//handleObject(user)
+handleObject({ 
+    username:"Sneha", // pass Object
+    price:399
+})
+
+const myNewArray =[200,400,100,600]
+function returnSecondvalue(getArray){ // pass array
+    return getArray[1]
+}
+console.log(returnSecondvalue(myNewArray));
