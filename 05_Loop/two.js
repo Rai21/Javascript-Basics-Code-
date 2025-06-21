@@ -17,6 +17,8 @@ var newarr=arr.map(function(val){
 console.log(newarr);
 */
 
+
+
 //----------------------------------
 
 //filter
@@ -28,7 +30,7 @@ var ans=arr.filter(function(val){
 })
 console.log(ans);
 */
-
+/*
 const books = [
     { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
     { title: 'Book Two', genre: 'Non-Fiction', publish: 1992, edition: 2008 },
@@ -47,7 +49,7 @@ const books = [
     return bk.publish >= 1995 && bk.genre === "History"
 })
   console.log(userBooks);
-
+*/
 //----------------------------------
 
 /*
