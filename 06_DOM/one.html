@@ -1,37 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>DOM learning</title> // DOM  :Document Object Model
+    <title>DOM learning</title>
 </head>
-<body>
-    <div class="bg-black">
-        <h1 class="heading">DOM learning on Chai aur code</h1>
+<style>
+    .bg-black{
+        background-color: #212121;
+        color: #fff;
+    }
+</style>
+
+<body class="bg-black">
+    <div>
+        <h1 id="title" class="heading">DOM learning on Chai <span style="display: none;">test as text</span> aur code</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, aspernatur illum perspiciatis necessitatibus nemo magnam earum commodi delectus, exercitationem animi incidunt fugit ipsam modi molestias minima dolores! Dolor distinctio consequuntur officia culpa quidem!</h2>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, corporis. Reprehenderit perspiciatis excepturi officiis nisi libero, eius illo provident debitis vero. Ducimus.</h2>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, corporis. Reprehenderit perspiciatis excepturi officiis nisi libero, eius illo provident debitis vero. Ducimus.</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, cumque!</p>
+        <input type="password" name="" id="">
+
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
     </div>
 </body>
 </html>
-
-
-<!--        HTML 
-      |                 |
-      V                 V
-     HEAD              BODY
-|           |           |        
-V           V           V        
-title      meta        div(attribute)
-|           |          |    |
-V           V          V    V
-text       Attribute   h1   p
-node
-
-// In browser -> Document History
-
-console.log(document)
-console.log(document.baseURI)
-console.log(document.links) // get all links
-
-// Dom Manupulation-> change the heading name on Brendan Eich Wikipedia select the name and inspect copy the heading name
-document.getElementById('firstHeading').innerHTML="<h1>Arijit Chatterjee</h1>"
-
--->
