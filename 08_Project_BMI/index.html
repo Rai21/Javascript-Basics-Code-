@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BMI Calculator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center px-4">
+  <div class="bg-gray-800 p-8 rounded-2xl shadow-lg w-full max-w-md">
+    <h1 class="text-3xl font-bold mb-6 text-center text-indigo-400">BMI Calculator</h1>
+    <form id="bmiForm" class="space-y-4">
+      <div>
+        <label class="block mb-1">Height in cm:</label>
+        <input
+          type="text"
+          id="height"
+          class="w-full p-2 rounded-md bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+        />
+      </div>
+      <div>
+        <label class="block mb-1">Weight in kg:</label>
+        <input
+          type="text"
+          id="weight"
+          class="w-full p-2 rounded-md bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+        />
+      </div>
+      <button
+        type="submit"
+        class="w-full bg-indigo-500 hover:bg-indigo-600 text-white py-2 px-4 rounded-md font-semibold transition duration-200"
+      >
+        Calculate
+      </button>
+      <div id="results" class="mt-4 text-xl font-medium text-center text-yellow-300"></div>
+    </form>
+
+    <div class="mt-8 bg-gray-700 p-4 rounded-lg">
+      <h3 class="text-lg font-semibold text-indigo-300 mb-2">BMI Weight Guide</h3>
+      <ul class="space-y-1 text-sm text-gray-200">
+        <li>Underweight = Less than 18.6</li>
+        <li>Normal Range = 18.6 to 24.9</li>
+        <li>Overweight = More than 24.9</li>
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
