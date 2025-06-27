@@ -1,2 +1,2 @@
-# js-hindi-Hitesh
-A code repo for Javascript at chai aur code
+# Its Beginnnnnn
+A code repo for Javascript 
