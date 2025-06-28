@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sneha Debnath</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setTimeout(function(){
+    // },6000) // setTimeout () give me 2 sec after that I will call this function 1 time
+    // console.log("Rai");
+    
+    const sayRai = function(){
+        console.log("Rai");
+    }
+    const changeText = function(){
+        document.querySelector('h1').innerHTML =  "Arijit Chatterjee"
+    }
+    const changeMe = setTimeout(changeText, 2000)
+    
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED");
+        
+    })
+</script>
+</html>

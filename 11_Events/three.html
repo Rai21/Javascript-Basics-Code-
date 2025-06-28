@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sneha Debnath</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayDate = function(str){
+        console.log("Rai",Date.now());
+        
+    }
+    const intervalId  = setInterval(sayDate,1000)
+    const notChangeMe = clearInterval(intervalId)
+    document.querySelector('#start').addEventListener('click', function(){
+        clearTimeout(notChangeMe)
+        console.log("START");
+        
+    })
+
+
+    // Stopped
+
+    const sayRai = function(){
+        console.log("Rai");
+    }
+    const changeText = function(){
+        document.querySelector('h1').innerHTML =  "Arijit Chatterjee"
+    }
+    const changeMe = setTimeout(changeText, 2000)
+    
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED");
+        
+    })
+
+</script>
+</html>
